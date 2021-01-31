@@ -17,6 +17,7 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     background-color:  hsl(185, 75%, 39%);
+    width: 100vw;
 }
 .top{
     position: absolute;
@@ -94,4 +95,20 @@ body{
     font-weight: 400;
     letter-spacing: 2px;
     color: hsl(0, 0%, 59%);
+}
+
+@media (max-width: 375px){
+    body{
+        height: 100vh;
+    }
+    .top{
+        transform: translate(-80%,-60%);
+    }
+    .bottom{
+        transform: translate(15%,35%);
+    }
+    .attribution{
+        bottom: 15px;
+        left: 8%;
+    }
 }
